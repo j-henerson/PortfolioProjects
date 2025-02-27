@@ -6,6 +6,7 @@ USE tourism;
 # Observing dataset as a whole
 SELECT *
 FROM tourism_data
+LIMIT 50
 ;
 
 # Observing how many different sites were evaluated in this dataset
