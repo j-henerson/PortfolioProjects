@@ -14,6 +14,12 @@ SELECT DISTINCT `Site Name`
 FROM tourism_data
 ;
 
+# Observing counts of sites to make sure there aren't small counts
+SELECT `Site Name`, COUNT(`Site Name`)
+FROM tourism_data
+GROUP BY `Site Name`
+;
+
 # Observing average satisfaction by tour site
 SELECT `Site Name`, AVG(`Tourist Rating`) AS `Average Rating`
 FROM tourism_data
